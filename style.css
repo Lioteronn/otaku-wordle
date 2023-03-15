@@ -37,5 +37,43 @@ body {
     width: 80px;
     height: 100%;
     font-size: 35px;
+    font-weight: bold;
     color: white;
+}
+
+.green-tile {
+    background: rgb(9, 192, 9);
+    border: 2px solid rgb(0, 128, 0);
+    color: rgb(0, 83, 0);
+}
+
+.yellow-tile {
+    background: rgb(255, 196, 0);
+    border: 2px solid rgb(161, 124, 0);
+    color: rgb(116, 89, 0);
+}
+
+.reset-button {
+    all: unset;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background: rgb(255, 158, 174);
+    border: 3px solid rgb(165, 75, 90);
+    border-radius: 10px;
+    color: rgb(165, 75, 90);
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.5s ease, background 0.1s ease;
+}
+
+.reset-button:hover {
+    transform: scale(1.1);
+}
+
+.reset-button:active {
+    background: rgb(255, 202, 211);
 }
