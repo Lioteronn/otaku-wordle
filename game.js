@@ -6,7 +6,6 @@ let REMAINING_GUESSES = NUMBER_OF_GUESSES;
 const gameBoard = document.querySelector(".game-container");
 
 let randomizedWord = getWord(WORDS);// WORDS[Math.floor(Math.random() * WORDS.length)];
-console.log(randomizedWord);
 let userInput = [];
 
 function initBoard() {
@@ -146,14 +145,11 @@ function checkGuess(word) {
 
                     rowBoxes[i].classList.add("yellow-tile");
                     rightGuess[j] = "#";
-                    console.log(rightGuess);
 
                 }
             }
         }
     }
-
-    console.log(userInput);
 
     if (userInput.join("") == randomizedWord.toUpperCase()) {
         setTimeout(() => {
@@ -170,7 +166,6 @@ function checkGuess(word) {
 function resetGame() {
 
     randomizedWord = getWord(WORDS);
-    console.log(randomizedWord);
     REMAINING_GUESSES = NUMBER_OF_GUESSES;
     userInput = [];
     const tiles = document.querySelectorAll(".tile");
