@@ -1,6 +1,7 @@
 export const WORDS = [
   "faffy",
   "kiers",
+  "pussy",
   "syens",
   "macle",
   "docks",
